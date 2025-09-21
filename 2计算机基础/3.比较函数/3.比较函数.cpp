@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <iostream>
+#include <climits>
 using namespace std;
 
 // ±È½Ïº¯Êý
@@ -12,7 +13,7 @@ int cmp(const void* const pa, const void* const pb) {
 }
 
 int main() {
-    int arr[3] = { -1, 0, INT_MAX };
+    int arr[3] = { -1, 0, INT_MAX};
     int* a = arr; int* b = arr+1; int* c = arr+2;
     if (cmp(a, b) < 0) {
         printf("%d < %d\n", *a, *b);
